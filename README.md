@@ -1,6 +1,6 @@
-# UE B ANIMED - MONAI Labs
+# TAF Health - MONAI Labs
 
-This repository contains the base materials for the labs in **UE B ANIMED** at **IMT Atlantique**.
+This repository contains the base materials for the labs in **TAF HEALTH** at **IMT Atlantique**.
 
 **Instructors:**
 - Vincent Jaouen
