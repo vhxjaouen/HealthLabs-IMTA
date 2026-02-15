@@ -1,0 +1,1 @@
+recursive-include healthlabs_imta/configs *.yaml
