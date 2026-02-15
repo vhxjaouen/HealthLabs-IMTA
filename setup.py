@@ -11,8 +11,9 @@ setup(
         "monai",
         "pyyaml",
         "tqdm",
-        "nibabel"
+        "nibabel",
     ],
     author="Vincent Jaouen",
     description="HealthLabs package for TAF HEALTH, IMT Atlantique, France",
+    python_requires=">=3.8",
 )
