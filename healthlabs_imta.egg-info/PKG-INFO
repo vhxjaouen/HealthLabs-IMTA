@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: healthlabs_imta
+Version: 0.1.0
+Summary: HealthLabs package for TAF HEALTH, IMT Atlantique, France
+Author: Vincent Jaouen
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: monai
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+Requires-Dist: nibabel
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

@@ -1,6 +1,6 @@
 import torch.nn as nn
 from monai.networks.nets import DenseNet121, resnet18, UNet, EfficientNetBN
-from models.simple_models import SimpleCNN, MiniUNet2D, TinyAutoencoder
+from healthlabs_imta.models.simple_models import SimpleCNN, MiniUNet2D, TinyAutoencoder
 
 
 

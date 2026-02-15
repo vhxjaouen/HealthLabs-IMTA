@@ -15,7 +15,7 @@ from monai.transforms import (
     EnsureTyped,
     Compose,
 )
-from utils.model_utils import model_factory
+from healthlabs_imta.utils.model_utils import model_factory
 
 
 # --------------------

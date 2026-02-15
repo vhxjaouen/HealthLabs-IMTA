@@ -1,16 +1,19 @@
 import torch
-import tqdm
+from tqdm.auto import tqdm
+import numpy as np
+import os
+import copy
 
 def train_segmentation(model, train_loader, val_loader, loss_fn, dice_metric, optimizer,
                 device="cuda", max_epochs=10, overlay_fn=None):
     train_losses, val_dices = [], []
     best_dice, best_weights = -1, None
 
-    for epoch in range(max_epochs):
-        print(f"Epoch {epoch+1}/{max_epochs}")
+    progress_bar = tqdm(range(max_epochs), desc="Training")
+    for epoch in progress_bar:
         model.train()
         epoch_loss = 0
-        for batch in tqdm.tqdm(train_loader, desc=f"Train {epoch+1}", leave=False):
+        for batch in train_loader:
             inputs, labels = batch["image"].to(device), batch["label"].to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -37,7 +40,7 @@ def train_segmentation(model, train_loader, val_loader, loss_fn, dice_metric, op
             dice_metric.reset()
             val_dices.append(mean_dice)
 
-        print(f"  Loss: {epoch_loss:.4f}, Val Dice: {mean_dice:.4f}")
+        progress_bar.set_postfix({"loss": f"{epoch_loss:.4f}", "dice": f"{mean_dice:.4f}"})
 
         if mean_dice > best_dice:
             best_dice, best_weights = mean_dice, model.state_dict().copy()
@@ -54,11 +57,11 @@ def train_classification(model, train_loader, val_loader, loss_fn, optimizer,
     train_losses, val_accs = [], []
     best_acc, best_weights = -1, None
 
-    for epoch in range(max_epochs):
-        print(f"   Epoch {epoch+1}/{max_epochs}")
+    progress_bar = tqdm(range(max_epochs), desc="Training")
+    for epoch in progress_bar:
         model.train()
         epoch_loss = 0
-        for batch in tqdm.tqdm(train_loader, desc=f"Train {epoch+1}", leave=False):
+        for batch in train_loader:
             inputs, labels = batch["image"].to(device), batch["label"].to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -82,22 +85,18 @@ def train_classification(model, train_loader, val_loader, loss_fn, optimizer,
         mean_acc = total_correct / total_samples if total_samples > 0 else 0
         val_accs.append(mean_acc)
 
-        print(f"Loss: {epoch_loss:.4f}, Val Acc: {mean_acc:.4f}")
+        progress_bar.set_postfix({"loss": f"{epoch_loss:.4f}", "acc": f"{mean_acc:.4f}"})
 
-        import copy
         if mean_acc > best_acc:
             best_acc, best_weights = mean_acc, model.state_dict().copy()
             if save_path is not None:
                 os.makedirs(os.path.dirname(save_path), exist_ok=True)
                 best_weights = copy.deepcopy(model.state_dict())
                 torch.save(best_weights, save_path)
-                print(f"Best model saved to {save_path}")
+                # print(f"Best model saved to {save_path}")
 
     return train_losses, val_accs, best_acc, best_weights
 
-import tqdm
-import numpy as np
-import os
 def train_i2i(
     model, train_loader, val_loader,
     loss_fn, optimizer,
@@ -109,8 +108,8 @@ def train_i2i(
     best_val, best_weights = float(0.), None
     maximize = val_metric == "psnr"
 
-    for epoch in range(max_epochs):
-        print(f"Epoch {epoch+1}/{max_epochs}")
+    progress_bar = tqdm(range(max_epochs), desc="Training")
+    for epoch in progress_bar:
         model.train()
         epoch_loss = 0
         for batch in train_loader:
@@ -152,10 +151,10 @@ def train_i2i(
 
         improved = val_score > best_val if maximize else val_score < best_val
         if improved:
-            print(("  New best model found!" if epoch > 0 else "  First model saved!"))
+            # print(("  New best model found!" if epoch > 0 else "  First model saved!"))
             best_val, best_weights = val_score, model.state_dict().copy()
 
-        print(f"  Train Loss: {epoch_loss:.4f}, Val {val_metric.upper()}: {val_score:.4f}")
+        progress_bar.set_postfix({"loss": f"{epoch_loss:.4f}", val_metric: f"{val_score:.4f}"})
 
     return train_losses, val_metrics, best_val, best_weights
 

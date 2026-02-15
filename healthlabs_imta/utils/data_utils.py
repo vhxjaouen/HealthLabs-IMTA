@@ -112,7 +112,7 @@ def get_classif_dataloaders(
     val_fraction=0.1,
     seed=42
 ):
-    from utils.data_utils import load_split_from_json  # reuse your helper
+    from healthlabs_imta.utils.data_utils import load_split_from_json  # reuse your helper
 
     np.random.seed(seed)
     all_files = load_split_from_json(data_dir, "training")
