@@ -1,0 +1,14 @@
+name: monai-lab
+channels: [pytorch, conda-forge]
+dependencies:
+  - python=3.10
+  - pytorch>=2.2
+  - torchvision
+  - cudatoolkit
+  - pip
+  - pip:
+      - monai>=1.4.0
+      - nibabel
+      - matplotlib
+      - tensorboard
+      - scikit-image

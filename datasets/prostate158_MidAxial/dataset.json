@@ -1,0 +1,571 @@
+{
+    "name": "Prostate158_MidAxial",
+    "description": "2D middle axial slices extracted from Prostate158 dataset (T2 + Anatomy Reader 1)",
+    "tensorImageSize": "2D",
+    "modality": {
+        "0": "MRI-T2"
+    },
+    "labels": {
+        "0": "background",
+        "1": "Prostate"
+    },
+    "numTraining": 139,
+    "training": [
+        {
+            "image": "./imagesTr/020.nii.gz",
+            "label": "./labelsTr/020.nii.gz"
+        },
+        {
+            "image": "./imagesTr/021.nii.gz",
+            "label": "./labelsTr/021.nii.gz"
+        },
+        {
+            "image": "./imagesTr/022.nii.gz",
+            "label": "./labelsTr/022.nii.gz"
+        },
+        {
+            "image": "./imagesTr/023.nii.gz",
+            "label": "./labelsTr/023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/024.nii.gz",
+            "label": "./labelsTr/024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/025.nii.gz",
+            "label": "./labelsTr/025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/026.nii.gz",
+            "label": "./labelsTr/026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/027.nii.gz",
+            "label": "./labelsTr/027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/028.nii.gz",
+            "label": "./labelsTr/028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/029.nii.gz",
+            "label": "./labelsTr/029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/030.nii.gz",
+            "label": "./labelsTr/030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/031.nii.gz",
+            "label": "./labelsTr/031.nii.gz"
+        },
+        {
+            "image": "./imagesTr/032.nii.gz",
+            "label": "./labelsTr/032.nii.gz"
+        },
+        {
+            "image": "./imagesTr/033.nii.gz",
+            "label": "./labelsTr/033.nii.gz"
+        },
+        {
+            "image": "./imagesTr/034.nii.gz",
+            "label": "./labelsTr/034.nii.gz"
+        },
+        {
+            "image": "./imagesTr/035.nii.gz",
+            "label": "./labelsTr/035.nii.gz"
+        },
+        {
+            "image": "./imagesTr/036.nii.gz",
+            "label": "./labelsTr/036.nii.gz"
+        },
+        {
+            "image": "./imagesTr/037.nii.gz",
+            "label": "./labelsTr/037.nii.gz"
+        },
+        {
+            "image": "./imagesTr/038.nii.gz",
+            "label": "./labelsTr/038.nii.gz"
+        },
+        {
+            "image": "./imagesTr/039.nii.gz",
+            "label": "./labelsTr/039.nii.gz"
+        },
+        {
+            "image": "./imagesTr/040.nii.gz",
+            "label": "./labelsTr/040.nii.gz"
+        },
+        {
+            "image": "./imagesTr/041.nii.gz",
+            "label": "./labelsTr/041.nii.gz"
+        },
+        {
+            "image": "./imagesTr/042.nii.gz",
+            "label": "./labelsTr/042.nii.gz"
+        },
+        {
+            "image": "./imagesTr/043.nii.gz",
+            "label": "./labelsTr/043.nii.gz"
+        },
+        {
+            "image": "./imagesTr/044.nii.gz",
+            "label": "./labelsTr/044.nii.gz"
+        },
+        {
+            "image": "./imagesTr/045.nii.gz",
+            "label": "./labelsTr/045.nii.gz"
+        },
+        {
+            "image": "./imagesTr/046.nii.gz",
+            "label": "./labelsTr/046.nii.gz"
+        },
+        {
+            "image": "./imagesTr/047.nii.gz",
+            "label": "./labelsTr/047.nii.gz"
+        },
+        {
+            "image": "./imagesTr/048.nii.gz",
+            "label": "./labelsTr/048.nii.gz"
+        },
+        {
+            "image": "./imagesTr/049.nii.gz",
+            "label": "./labelsTr/049.nii.gz"
+        },
+        {
+            "image": "./imagesTr/050.nii.gz",
+            "label": "./labelsTr/050.nii.gz"
+        },
+        {
+            "image": "./imagesTr/051.nii.gz",
+            "label": "./labelsTr/051.nii.gz"
+        },
+        {
+            "image": "./imagesTr/052.nii.gz",
+            "label": "./labelsTr/052.nii.gz"
+        },
+        {
+            "image": "./imagesTr/053.nii.gz",
+            "label": "./labelsTr/053.nii.gz"
+        },
+        {
+            "image": "./imagesTr/054.nii.gz",
+            "label": "./labelsTr/054.nii.gz"
+        },
+        {
+            "image": "./imagesTr/055.nii.gz",
+            "label": "./labelsTr/055.nii.gz"
+        },
+        {
+            "image": "./imagesTr/056.nii.gz",
+            "label": "./labelsTr/056.nii.gz"
+        },
+        {
+            "image": "./imagesTr/057.nii.gz",
+            "label": "./labelsTr/057.nii.gz"
+        },
+        {
+            "image": "./imagesTr/058.nii.gz",
+            "label": "./labelsTr/058.nii.gz"
+        },
+        {
+            "image": "./imagesTr/059.nii.gz",
+            "label": "./labelsTr/059.nii.gz"
+        },
+        {
+            "image": "./imagesTr/060.nii.gz",
+            "label": "./labelsTr/060.nii.gz"
+        },
+        {
+            "image": "./imagesTr/061.nii.gz",
+            "label": "./labelsTr/061.nii.gz"
+        },
+        {
+            "image": "./imagesTr/062.nii.gz",
+            "label": "./labelsTr/062.nii.gz"
+        },
+        {
+            "image": "./imagesTr/063.nii.gz",
+            "label": "./labelsTr/063.nii.gz"
+        },
+        {
+            "image": "./imagesTr/064.nii.gz",
+            "label": "./labelsTr/064.nii.gz"
+        },
+        {
+            "image": "./imagesTr/065.nii.gz",
+            "label": "./labelsTr/065.nii.gz"
+        },
+        {
+            "image": "./imagesTr/066.nii.gz",
+            "label": "./labelsTr/066.nii.gz"
+        },
+        {
+            "image": "./imagesTr/067.nii.gz",
+            "label": "./labelsTr/067.nii.gz"
+        },
+        {
+            "image": "./imagesTr/068.nii.gz",
+            "label": "./labelsTr/068.nii.gz"
+        },
+        {
+            "image": "./imagesTr/069.nii.gz",
+            "label": "./labelsTr/069.nii.gz"
+        },
+        {
+            "image": "./imagesTr/070.nii.gz",
+            "label": "./labelsTr/070.nii.gz"
+        },
+        {
+            "image": "./imagesTr/071.nii.gz",
+            "label": "./labelsTr/071.nii.gz"
+        },
+        {
+            "image": "./imagesTr/072.nii.gz",
+            "label": "./labelsTr/072.nii.gz"
+        },
+        {
+            "image": "./imagesTr/073.nii.gz",
+            "label": "./labelsTr/073.nii.gz"
+        },
+        {
+            "image": "./imagesTr/074.nii.gz",
+            "label": "./labelsTr/074.nii.gz"
+        },
+        {
+            "image": "./imagesTr/075.nii.gz",
+            "label": "./labelsTr/075.nii.gz"
+        },
+        {
+            "image": "./imagesTr/076.nii.gz",
+            "label": "./labelsTr/076.nii.gz"
+        },
+        {
+            "image": "./imagesTr/077.nii.gz",
+            "label": "./labelsTr/077.nii.gz"
+        },
+        {
+            "image": "./imagesTr/078.nii.gz",
+            "label": "./labelsTr/078.nii.gz"
+        },
+        {
+            "image": "./imagesTr/079.nii.gz",
+            "label": "./labelsTr/079.nii.gz"
+        },
+        {
+            "image": "./imagesTr/080.nii.gz",
+            "label": "./labelsTr/080.nii.gz"
+        },
+        {
+            "image": "./imagesTr/081.nii.gz",
+            "label": "./labelsTr/081.nii.gz"
+        },
+        {
+            "image": "./imagesTr/082.nii.gz",
+            "label": "./labelsTr/082.nii.gz"
+        },
+        {
+            "image": "./imagesTr/083.nii.gz",
+            "label": "./labelsTr/083.nii.gz"
+        },
+        {
+            "image": "./imagesTr/084.nii.gz",
+            "label": "./labelsTr/084.nii.gz"
+        },
+        {
+            "image": "./imagesTr/085.nii.gz",
+            "label": "./labelsTr/085.nii.gz"
+        },
+        {
+            "image": "./imagesTr/086.nii.gz",
+            "label": "./labelsTr/086.nii.gz"
+        },
+        {
+            "image": "./imagesTr/087.nii.gz",
+            "label": "./labelsTr/087.nii.gz"
+        },
+        {
+            "image": "./imagesTr/088.nii.gz",
+            "label": "./labelsTr/088.nii.gz"
+        },
+        {
+            "image": "./imagesTr/089.nii.gz",
+            "label": "./labelsTr/089.nii.gz"
+        },
+        {
+            "image": "./imagesTr/090.nii.gz",
+            "label": "./labelsTr/090.nii.gz"
+        },
+        {
+            "image": "./imagesTr/091.nii.gz",
+            "label": "./labelsTr/091.nii.gz"
+        },
+        {
+            "image": "./imagesTr/092.nii.gz",
+            "label": "./labelsTr/092.nii.gz"
+        },
+        {
+            "image": "./imagesTr/093.nii.gz",
+            "label": "./labelsTr/093.nii.gz"
+        },
+        {
+            "image": "./imagesTr/094.nii.gz",
+            "label": "./labelsTr/094.nii.gz"
+        },
+        {
+            "image": "./imagesTr/095.nii.gz",
+            "label": "./labelsTr/095.nii.gz"
+        },
+        {
+            "image": "./imagesTr/096.nii.gz",
+            "label": "./labelsTr/096.nii.gz"
+        },
+        {
+            "image": "./imagesTr/097.nii.gz",
+            "label": "./labelsTr/097.nii.gz"
+        },
+        {
+            "image": "./imagesTr/098.nii.gz",
+            "label": "./labelsTr/098.nii.gz"
+        },
+        {
+            "image": "./imagesTr/099.nii.gz",
+            "label": "./labelsTr/099.nii.gz"
+        },
+        {
+            "image": "./imagesTr/100.nii.gz",
+            "label": "./labelsTr/100.nii.gz"
+        },
+        {
+            "image": "./imagesTr/101.nii.gz",
+            "label": "./labelsTr/101.nii.gz"
+        },
+        {
+            "image": "./imagesTr/102.nii.gz",
+            "label": "./labelsTr/102.nii.gz"
+        },
+        {
+            "image": "./imagesTr/103.nii.gz",
+            "label": "./labelsTr/103.nii.gz"
+        },
+        {
+            "image": "./imagesTr/104.nii.gz",
+            "label": "./labelsTr/104.nii.gz"
+        },
+        {
+            "image": "./imagesTr/105.nii.gz",
+            "label": "./labelsTr/105.nii.gz"
+        },
+        {
+            "image": "./imagesTr/106.nii.gz",
+            "label": "./labelsTr/106.nii.gz"
+        },
+        {
+            "image": "./imagesTr/107.nii.gz",
+            "label": "./labelsTr/107.nii.gz"
+        },
+        {
+            "image": "./imagesTr/108.nii.gz",
+            "label": "./labelsTr/108.nii.gz"
+        },
+        {
+            "image": "./imagesTr/109.nii.gz",
+            "label": "./labelsTr/109.nii.gz"
+        },
+        {
+            "image": "./imagesTr/110.nii.gz",
+            "label": "./labelsTr/110.nii.gz"
+        },
+        {
+            "image": "./imagesTr/111.nii.gz",
+            "label": "./labelsTr/111.nii.gz"
+        },
+        {
+            "image": "./imagesTr/112.nii.gz",
+            "label": "./labelsTr/112.nii.gz"
+        },
+        {
+            "image": "./imagesTr/113.nii.gz",
+            "label": "./labelsTr/113.nii.gz"
+        },
+        {
+            "image": "./imagesTr/114.nii.gz",
+            "label": "./labelsTr/114.nii.gz"
+        },
+        {
+            "image": "./imagesTr/115.nii.gz",
+            "label": "./labelsTr/115.nii.gz"
+        },
+        {
+            "image": "./imagesTr/116.nii.gz",
+            "label": "./labelsTr/116.nii.gz"
+        },
+        {
+            "image": "./imagesTr/117.nii.gz",
+            "label": "./labelsTr/117.nii.gz"
+        },
+        {
+            "image": "./imagesTr/118.nii.gz",
+            "label": "./labelsTr/118.nii.gz"
+        },
+        {
+            "image": "./imagesTr/119.nii.gz",
+            "label": "./labelsTr/119.nii.gz"
+        },
+        {
+            "image": "./imagesTr/120.nii.gz",
+            "label": "./labelsTr/120.nii.gz"
+        },
+        {
+            "image": "./imagesTr/121.nii.gz",
+            "label": "./labelsTr/121.nii.gz"
+        },
+        {
+            "image": "./imagesTr/122.nii.gz",
+            "label": "./labelsTr/122.nii.gz"
+        },
+        {
+            "image": "./imagesTr/123.nii.gz",
+            "label": "./labelsTr/123.nii.gz"
+        },
+        {
+            "image": "./imagesTr/124.nii.gz",
+            "label": "./labelsTr/124.nii.gz"
+        },
+        {
+            "image": "./imagesTr/125.nii.gz",
+            "label": "./labelsTr/125.nii.gz"
+        },
+        {
+            "image": "./imagesTr/126.nii.gz",
+            "label": "./labelsTr/126.nii.gz"
+        },
+        {
+            "image": "./imagesTr/127.nii.gz",
+            "label": "./labelsTr/127.nii.gz"
+        },
+        {
+            "image": "./imagesTr/128.nii.gz",
+            "label": "./labelsTr/128.nii.gz"
+        },
+        {
+            "image": "./imagesTr/129.nii.gz",
+            "label": "./labelsTr/129.nii.gz"
+        },
+        {
+            "image": "./imagesTr/130.nii.gz",
+            "label": "./labelsTr/130.nii.gz"
+        },
+        {
+            "image": "./imagesTr/131.nii.gz",
+            "label": "./labelsTr/131.nii.gz"
+        },
+        {
+            "image": "./imagesTr/132.nii.gz",
+            "label": "./labelsTr/132.nii.gz"
+        },
+        {
+            "image": "./imagesTr/133.nii.gz",
+            "label": "./labelsTr/133.nii.gz"
+        },
+        {
+            "image": "./imagesTr/134.nii.gz",
+            "label": "./labelsTr/134.nii.gz"
+        },
+        {
+            "image": "./imagesTr/135.nii.gz",
+            "label": "./labelsTr/135.nii.gz"
+        },
+        {
+            "image": "./imagesTr/136.nii.gz",
+            "label": "./labelsTr/136.nii.gz"
+        },
+        {
+            "image": "./imagesTr/137.nii.gz",
+            "label": "./labelsTr/137.nii.gz"
+        },
+        {
+            "image": "./imagesTr/138.nii.gz",
+            "label": "./labelsTr/138.nii.gz"
+        },
+        {
+            "image": "./imagesTr/139.nii.gz",
+            "label": "./labelsTr/139.nii.gz"
+        },
+        {
+            "image": "./imagesTr/140.nii.gz",
+            "label": "./labelsTr/140.nii.gz"
+        },
+        {
+            "image": "./imagesTr/141.nii.gz",
+            "label": "./labelsTr/141.nii.gz"
+        },
+        {
+            "image": "./imagesTr/142.nii.gz",
+            "label": "./labelsTr/142.nii.gz"
+        },
+        {
+            "image": "./imagesTr/143.nii.gz",
+            "label": "./labelsTr/143.nii.gz"
+        },
+        {
+            "image": "./imagesTr/144.nii.gz",
+            "label": "./labelsTr/144.nii.gz"
+        },
+        {
+            "image": "./imagesTr/145.nii.gz",
+            "label": "./labelsTr/145.nii.gz"
+        },
+        {
+            "image": "./imagesTr/146.nii.gz",
+            "label": "./labelsTr/146.nii.gz"
+        },
+        {
+            "image": "./imagesTr/147.nii.gz",
+            "label": "./labelsTr/147.nii.gz"
+        },
+        {
+            "image": "./imagesTr/148.nii.gz",
+            "label": "./labelsTr/148.nii.gz"
+        },
+        {
+            "image": "./imagesTr/149.nii.gz",
+            "label": "./labelsTr/149.nii.gz"
+        },
+        {
+            "image": "./imagesTr/150.nii.gz",
+            "label": "./labelsTr/150.nii.gz"
+        },
+        {
+            "image": "./imagesTr/151.nii.gz",
+            "label": "./labelsTr/151.nii.gz"
+        },
+        {
+            "image": "./imagesTr/152.nii.gz",
+            "label": "./labelsTr/152.nii.gz"
+        },
+        {
+            "image": "./imagesTr/153.nii.gz",
+            "label": "./labelsTr/153.nii.gz"
+        },
+        {
+            "image": "./imagesTr/154.nii.gz",
+            "label": "./labelsTr/154.nii.gz"
+        },
+        {
+            "image": "./imagesTr/155.nii.gz",
+            "label": "./labelsTr/155.nii.gz"
+        },
+        {
+            "image": "./imagesTr/156.nii.gz",
+            "label": "./labelsTr/156.nii.gz"
+        },
+        {
+            "image": "./imagesTr/157.nii.gz",
+            "label": "./labelsTr/157.nii.gz"
+        },
+        {
+            "image": "./imagesTr/158.nii.gz",
+            "label": "./labelsTr/158.nii.gz"
+        }
+    ]
+}

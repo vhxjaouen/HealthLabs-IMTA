@@ -1,0 +1,44 @@
+# configs/classification.yaml
+
+experiment:
+  name: modality_classification
+  seed: 42
+
+data:
+  data_dir: "../datasets/MidTumors"
+  split: "training"
+  batch_size: 16
+  num_workers: 2
+  cache_rate: 1.0
+  target_size: [128, 128]
+
+labels:
+  0: t1ce
+  1: t2
+  2: flair
+
+training:
+  max_epochs: 20
+
+# model:
+#   type: DenseNet121
+#   spatial_dims: 2
+#   in_channels: 1
+#   out_channels: 3
+#   pretrained: false
+
+# model:
+#   type: SmallCNN
+#   in_channels: 1
+#   out_channels: 3
+#   width: 64  
+
+model:
+  type: ResNet18
+  spatial_dims: 2
+  in_channels: 1
+  out_channels: 3
+
+save:
+  out_dir: "./runs/classif"
+  best_model_path: "./runs/classif/best_model.pth"

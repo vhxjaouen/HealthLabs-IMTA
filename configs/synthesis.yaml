@@ -1,0 +1,33 @@
+experiment:
+  name: t1ce_to_t2_unet2d
+  seed: 29100
+
+data:
+  data_dir: "../datasets/MidTumors"
+  batch_size: 1
+  num_workers: 2
+  cache_rate: 1.0
+  target_size: [240, 240]
+  val_fraction: 0.1
+
+
+model:
+  type: UNet
+  spatial_dims: 2
+  in_channels: 1        # T1ce
+  out_channels: 1       # T2
+  channels: [16, 32, 64, 128]
+  strides: [2, 2, 2]
+  num_res_units: 3
+
+training:
+  max_epochs: 100
+  lr: 0.0005
+  optimizer: adam       # (informative—on l’utilise dans le notebook)
+  weight_decay: 0.0
+  loss: l1             # mse ou l1
+  val_metric: psnr       # mae ou psnr
+
+save:
+  out_dir: "./runs/i2i"
+  best_model_path: "./runs/i2i/best_model_t1ce2t2.pth"

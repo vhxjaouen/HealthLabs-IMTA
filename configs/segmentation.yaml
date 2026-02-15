@@ -1,0 +1,27 @@
+# configs/segmentation.yaml
+experiment:
+  name: brain_tumor_seg
+  seed: 29100
+
+data:
+  data_dir: "../datasets/MidTumors"
+  batch_size: 1
+  num_workers: 1
+  target_size: [240, 240]
+  val_fraction: 0.1
+
+model:
+  type: UNet
+  spatial_dims: 2
+  in_channels: 3
+  out_channels: 1
+  channels: [16, 32, 64, 128, 128]
+  strides: [2, 2, 2, 2]
+  num_res_units: 2
+
+training:
+  max_epochs: 20
+  lr: 0.0003
+  optimizer: adam
+  loss: DiceCELoss
+  metric: DiceMetric
