@@ -15,6 +15,6 @@ The practical sessions are organized in Jupyter notebooks located in the [notebo
 - [01_segmentation.ipynb](notebooks/01_segmentation.ipynb)
 - [02_classification.ipynb](notebooks/02_classification.ipynb)
 - [03_synthesis.ipynb](notebooks/03_synthesis.ipynb)
-- [04_frugalAI_prostate.ipynb](notebooks/04_frugalAI_prostate.ipynb)
+- [04_frugalAI_prostate.ipynb](notebooks/04_frugalAI_prostate_student.ipynb)
 
 Please follow the instructions provided in each notebook.
